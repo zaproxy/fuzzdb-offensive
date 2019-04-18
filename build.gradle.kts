@@ -17,6 +17,11 @@ eclipse {
 version = "1"
 description = "FuzzDB web backdoors which can be used with the ZAP fuzzer"
 
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
 val generateManifestChanges by tasks.registering(ConvertChangelogToChanges::class) {
     changelog.set(file("CHANGELOG.md"))
     manifestChanges.set(file("$buildDir/zapAddOn/manifest-changes.html"))
