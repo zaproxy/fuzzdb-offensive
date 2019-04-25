@@ -1,0 +1,23 @@
+* text=lf
+
+*.txt text
+*.asp text
+*.aspx text
+*.c text
+*.jsp text
+*.java text
+*.xml text
+*.php text
+*.pl text
+*.cgi text
+*.cfm text
+*.gradle text
+*.gradle.kts text
+*.properties text
+*.md text
+
+*.bat text eol=crlf
+*.sh=text
+gradlew text
+
+*.jar binary
