@@ -17,7 +17,7 @@
 *.md text
 
 *.bat text eol=crlf
-*.sh=text
+*.sh text
 gradlew text
 
 *.jar binary
