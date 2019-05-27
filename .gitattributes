@@ -1,4 +1,4 @@
-* text=lf
+* text=auto eol=lf
 
 *.txt text
 *.asp text
@@ -16,7 +16,7 @@
 *.properties text
 *.md text
 
-*.bat text eol=crlf
+*.bat eol=crlf
 *.sh text
 gradlew text
 
