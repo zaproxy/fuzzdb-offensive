@@ -26,6 +26,7 @@ java {
 }
 
 zapAddOn {
+    addOnId.set(project.name.replace("-", ""))
     addOnName.set("FuzzDB Web Backdoors")
     addOnStatus.set(AddOnStatus.RELEASE)
     zapVersion.set("2.5.0")
