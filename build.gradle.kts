@@ -33,7 +33,7 @@ zapAddOn {
     addOnId.set(project.name.replace("-", ""))
     addOnName.set("FuzzDB Web Backdoors")
     addOnStatus.set(AddOnStatus.RELEASE)
-    zapVersion.set("2.5.0")
+    zapVersion.set("2.8.0")
 
     releaseLink.set("https://github.com/zaproxy/fuzzdb-web-backdoors/compare/v@PREVIOUS_VERSION@...v@CURRENT_VERSION@")
     unreleasedLink.set("https://github.com/zaproxy/fuzzdb-web-backdoors/compare/v@CURRENT_VERSION@...HEAD")
