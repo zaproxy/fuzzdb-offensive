@@ -17,6 +17,10 @@ eclipse {
     }
 }
 
+repositories {
+    mavenCentral()
+}
+
 version = "1"
 description = "FuzzDB web backdoors which can be used with the ZAP fuzzer"
 
@@ -38,6 +42,11 @@ zapAddOn {
         author.set("ZAP Dev Team")
         url.set("https://github.com/fuzzdb-project/fuzzdb/")
         changesFile.set(tasks.named<ConvertMarkdownToHtml>("generateManifestChanges").flatMap { it.html })
+
+        helpSet {
+            baseName.set("help%LC%.helpset")
+            localeToken.set("%LC%")
+        }
     }
 }
 
