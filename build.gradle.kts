@@ -21,7 +21,7 @@ repositories {
     mavenCentral()
 }
 
-version = "1"
+version = "2"
 description = "FuzzDB web backdoors which can be used with the ZAP fuzzer"
 
 java {
