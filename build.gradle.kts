@@ -7,7 +7,7 @@ import org.zaproxy.gradle.addon.misc.ExtractLatestChangesFromChangelog
 plugins {
     `java-library`
     eclipse
-    id("org.zaproxy.add-on") version "0.2.0"
+    id("org.zaproxy.add-on") version "0.3.0"
 }
 
 eclipse {
@@ -40,7 +40,8 @@ zapAddOn {
 
     manifest {
         author.set("ZAP Dev Team")
-        url.set("https://github.com/fuzzdb-project/fuzzdb/")
+        url.set("https://zaproxy.org/docs/desktop/addons/fuzzdb-web-backdoors/")
+        repo.set("https://github.com/zaproxy/fuzzdb-web-backdoors/")
         changesFile.set(tasks.named<ConvertMarkdownToHtml>("generateManifestChanges").flatMap { it.html })
 
         helpSet {
