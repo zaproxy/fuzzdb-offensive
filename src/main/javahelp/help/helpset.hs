@@ -6,7 +6,7 @@
   <title>FuzzDB Web Backdoors Add-On</title>
 
   <maps>
-     <homeID>top</homeID>
+     <homeID>fuzzdb-web-backdoors</homeID>
      <mapref location="map.jhm"/>
   </maps>
 
