@@ -21,7 +21,7 @@ repositories {
     mavenCentral()
 }
 
-version = "2"
+version = "3"
 description = "FuzzDB web backdoors which can be used with the ZAP fuzzer"
 
 java {
@@ -40,7 +40,7 @@ zapAddOn {
 
     manifest {
         author.set("ZAP Dev Team")
-        url.set("https://zaproxy.org/docs/desktop/addons/fuzzdb-web-backdoors/")
+        url.set("https://www.zaproxy.org/docs/desktop/addons/fuzzdb-web-backdoors/")
         repo.set("https://github.com/zaproxy/fuzzdb-web-backdoors/")
         changesFile.set(tasks.named<ConvertMarkdownToHtml>("generateManifestChanges").flatMap { it.html })
 
