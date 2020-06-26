@@ -22,7 +22,7 @@ repositories {
 }
 
 version = "3"
-description = "FuzzDB web backdoors which can be used with the ZAP fuzzer"
+description = "FuzzDB web backdoors and attack files which can be used with the ZAP fuzzer or for manual penetration testing"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
@@ -31,17 +31,17 @@ java {
 
 zapAddOn {
     addOnId.set(project.name.replace("-", ""))
-    addOnName.set("FuzzDB Web Backdoors")
+    addOnName.set("FuzzDB Offensive")
     addOnStatus.set(AddOnStatus.RELEASE)
     zapVersion.set("2.9.0")
 
-    releaseLink.set("https://github.com/zaproxy/fuzzdb-web-backdoors/compare/v@PREVIOUS_VERSION@...v@CURRENT_VERSION@")
-    unreleasedLink.set("https://github.com/zaproxy/fuzzdb-web-backdoors/compare/v@CURRENT_VERSION@...HEAD")
+    releaseLink.set("https://github.com/zaproxy/fuzzdb-offensive/compare/v@PREVIOUS_VERSION@...v@CURRENT_VERSION@")
+    unreleasedLink.set("https://github.com/zaproxy/fuzzdb-offensive/compare/v@CURRENT_VERSION@...HEAD")
 
     manifest {
         author.set("ZAP Dev Team")
-        url.set("https://www.zaproxy.org/docs/desktop/addons/fuzzdb-web-backdoors/")
-        repo.set("https://github.com/zaproxy/fuzzdb-web-backdoors/")
+        url.set("https://www.zaproxy.org/docs/desktop/addons/fuzzdb-offensive/")
+        repo.set("https://github.com/zaproxy/fuzzdb-offensive/")
         changesFile.set(tasks.named<ConvertMarkdownToHtml>("generateManifestChanges").flatMap { it.html })
 
         helpSet {
