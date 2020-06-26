@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Changed
 - Do not set the background colour of the help page.
 - Migrated 'attack' directory and components from main FuzzDB add-on, due to anti-virus considerations (Issue 5972).
+- Updated from upstream.
 
 ## [2] - 2020-01-30
 ### Added
