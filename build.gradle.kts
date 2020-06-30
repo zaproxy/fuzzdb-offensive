@@ -21,7 +21,7 @@ repositories {
     mavenCentral()
 }
 
-version = "3"
+version = "4"
 description = "FuzzDB web backdoors and attack files which can be used with the ZAP fuzzer or for manual penetration testing"
 
 java {
