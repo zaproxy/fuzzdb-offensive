@@ -3,10 +3,10 @@
   PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp HelpSet Version 2.0//EN"
          "http://java.sun.com/products/javahelp/helpset_2_0.dtd">
 <helpset version="2.0" xml:lang="en-GB">
-  <title>FuzzDB Web Backdoors Add-On</title>
+  <title>FuzzDB Offensive Add-On</title>
 
   <maps>
-     <homeID>fuzzdb-web-backdoors</homeID>
+     <homeID>fuzzdb-offensive</homeID>
      <mapref location="map.jhm"/>
   </maps>
 

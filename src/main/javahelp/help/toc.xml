@@ -6,7 +6,7 @@
 <toc version="2.0">
     <tocitem text="ZAP User Guide" tocid="toplevelitem">
         <tocitem text="Add Ons" tocid="addons">
-            <tocitem text="FuzzDB Web Backdoors" target="fuzzdb-web-backdoors"/>
+            <tocitem text="FuzzDB Offensive" target="fuzzdb-offensive"/>
         </tocitem>
     </tocitem>
 </toc>

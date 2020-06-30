@@ -1,1 +1,1 @@
-rootProject.name = "fuzzdb-web-backdoors"
+rootProject.name = "fuzzdb-offensive"
