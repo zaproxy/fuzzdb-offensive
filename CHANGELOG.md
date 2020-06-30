@@ -3,7 +3,7 @@ All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## [Unreleased]
+## [3] - 2020-06-30
 ### Changed
 - Do not set the background colour of the help page.
 - Migrated 'attack' directory and components from main FuzzDB add-on, due to anti-virus considerations (Issue 5972).
@@ -21,6 +21,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 First version.
 
-[Unreleased]: https://github.com/zaproxy/fuzzdb-offensive/compare/v2...HEAD
+[3]: https://github.com/zaproxy/fuzzdb-offensive/compare/v2...v3
 [2]: https://github.com/zaproxy/fuzzdb-offensive/compare/v1...v2
 [1]: https://github.com/zaproxy/fuzzdb-offensive/releases/v1
