@@ -7,6 +7,7 @@ import org.zaproxy.gradle.addon.misc.ExtractLatestChangesFromChangelog
 plugins {
     `java-library`
     eclipse
+    id("com.diffplug.spotless") version "5.12.1"
     id("org.zaproxy.add-on") version "0.5.0"
 }
 
@@ -48,6 +49,12 @@ zapAddOn {
             baseName.set("help%LC%.helpset")
             localeToken.set("%LC%")
         }
+    }
+}
+
+spotless {
+    kotlinGradle {
+        ktlint()
     }
 }
 
