@@ -24,5 +24,5 @@ jobs:
       run: ./gradlew generateReleaseStateLastCommit
     - name: Build and Release Add-On
       env:
-        ZABOT_TOKEN: ${{ secrets.ZABOT_TOKEN }}
+        ZAPBOT_TOKEN: ${{ secrets.ZAPBOT_TOKEN }}
       run: ./gradlew releaseAddOn
