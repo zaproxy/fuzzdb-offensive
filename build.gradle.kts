@@ -8,7 +8,8 @@ plugins {
     `java-library`
     eclipse
     id("com.diffplug.spotless") version "5.12.1"
-    id("org.zaproxy.add-on") version "0.6.0"
+    id("org.zaproxy.add-on") version "0.7.0"
+    id("org.zaproxy.crowdin") version "0.1.0"
 }
 
 eclipse {
@@ -51,6 +52,17 @@ zapAddOn {
     }
 }
 
+crowdin {
+    credentials {
+        token.set(System.getenv("CROWDIN_AUTH_TOKEN"))
+    }
+
+    configuration {
+        file.set(file("gradle/crowdin.yml"))
+        tokens.set(mutableMapOf("%addOnId%" to zapAddOn.addOnId.get()))
+    }
+}
+
 spotless {
     kotlinGradle {
         ktlint()
@@ -67,5 +79,6 @@ val releaseAddOn by tasks.registering {
         dependsOn("createRelease")
         dependsOn("handleRelease")
         dependsOn("createPullRequestNextDevIter")
+        dependsOn("crowdinUploadSourceFiles")
     }
 }
