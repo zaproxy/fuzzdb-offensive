@@ -21,6 +21,9 @@ eclipse {
 
 repositories {
     mavenCentral()
+    maven {
+        url = uri("https://oss.sonatype.org/content/repositories/snapshots/")
+    }
 }
 
 description = "FuzzDB web backdoors and attack files which can be used with the ZAP fuzzer or for manual penetration testing"
@@ -34,7 +37,7 @@ zapAddOn {
     addOnId.set(project.name.replace("-", ""))
     addOnName.set("FuzzDB Offensive")
     addOnStatus.set(AddOnStatus.RELEASE)
-    zapVersion.set("2.10.0")
+    zapVersion.set("2.11.0")
 
     releaseLink.set("https://github.com/zaproxy/fuzzdb-offensive/compare/v@PREVIOUS_VERSION@...v@CURRENT_VERSION@")
     unreleasedLink.set("https://github.com/zaproxy/fuzzdb-offensive/compare/v@CURRENT_VERSION@...HEAD")
@@ -50,6 +53,10 @@ zapAddOn {
             localeToken.set("%LC%")
         }
     }
+}
+
+dependencies {
+    zap("org.zaproxy:zap:2.11.0-20210929.165234-4")
 }
 
 crowdin {
