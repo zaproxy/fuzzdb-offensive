@@ -7,8 +7,8 @@ import org.zaproxy.gradle.addon.misc.ConvertMarkdownToHtml
 plugins {
     `java-library`
     eclipse
-    id("com.diffplug.spotless") version "6.14.1"
-    id("org.zaproxy.add-on") version "0.8.0"
+    id("com.diffplug.spotless") version "6.20.0"
+    id("org.zaproxy.add-on") version "0.9.0"
     id("org.zaproxy.crowdin") version "0.3.1"
 }
 
@@ -35,7 +35,7 @@ zapAddOn {
     addOnId.set(project.name.replace("-", ""))
     addOnName.set("FuzzDB Offensive")
     addOnStatus.set(AddOnStatus.RELEASE)
-    zapVersion.set("2.12.0")
+    zapVersion.set("2.13.0")
 
     releaseLink.set("https://github.com/zaproxy/fuzzdb-offensive/compare/v@PREVIOUS_VERSION@...v@CURRENT_VERSION@")
     unreleasedLink.set("https://github.com/zaproxy/fuzzdb-offensive/compare/v@CURRENT_VERSION@...HEAD")
