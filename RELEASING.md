@@ -10,7 +10,7 @@ will create the tag, create the release, trigger the update of the marketplace, 
 
 ## Localized Resources
 
-The resources that require localization (e.g. help pages) are uploaded to the OWASP ZAP projects in [Crowdin](https://crowdin.com/) when the
+The resources that require localization (e.g. help pages) are uploaded to the ZAP projects in [Crowdin](https://crowdin.com/) when the
 add-on is released, if required (for pre-translation) the resources can be uploaded manually at anytime by running the workflow
 [Crowdin Upload Files](https://github.com/zaproxy/fuzzdb-offensive/actions/workflows/crowdin-upload-files.yml).
 
