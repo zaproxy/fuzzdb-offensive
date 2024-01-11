@@ -3,7 +3,7 @@ All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## [Unreleased]
+## [5] - 2024-01-11
 ### Changed
 - Update minimum ZAP version to 2.14.0.
 - Updated help and description to say this may cause problems with anti-virus tools (Issue 8297).
@@ -30,7 +30,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 First version.
 
-[Unreleased]: https://github.com/zaproxy/fuzzdb-offensive/compare/v4...HEAD
+[5]: https://github.com/zaproxy/fuzzdb-offensive/compare/v4...v5
 [4]: https://github.com/zaproxy/fuzzdb-offensive/compare/v3...v4
 [3]: https://github.com/zaproxy/fuzzdb-offensive/compare/v2...v3
 [2]: https://github.com/zaproxy/fuzzdb-offensive/compare/v1...v2
