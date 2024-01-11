@@ -20,7 +20,7 @@ eclipse {
     }
 }
 
-description = "FuzzDB web backdoors and attack files which can be used with the ZAP fuzzer or for manual penetration testing"
+description = "FuzzDB web backdoors and attack files which can be used with the ZAP fuzzer or for manual penetration testing - contains files that may well be flagged by anti-virus tools"
 
 java {
     val javaVersion = JavaVersion.VERSION_11
