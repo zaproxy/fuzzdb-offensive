@@ -9,8 +9,8 @@ plugins {
     eclipse
     id("com.diffplug.spotless")
     id("org.zaproxy.common")
-    id("org.zaproxy.add-on") version "0.11.0"
-    id("org.zaproxy.crowdin") version "0.4.0"
+    id("org.zaproxy.add-on") version "0.13.1"
+    id("org.zaproxy.crowdin") version "0.6.0"
 }
 
 eclipse {
@@ -26,7 +26,7 @@ description = (
 )
 
 java {
-    val javaVersion = JavaVersion.VERSION_11
+    val javaVersion = JavaVersion.VERSION_17
     sourceCompatibility = javaVersion
     targetCompatibility = javaVersion
 }
@@ -35,7 +35,7 @@ zapAddOn {
     addOnId.set(project.name.replace("-", ""))
     addOnName.set("FuzzDB Offensive")
     addOnStatus.set(AddOnStatus.RELEASE)
-    zapVersion.set("2.15.0")
+    zapVersion.set("2.16.0")
 
     releaseLink.set("https://github.com/zaproxy/fuzzdb-offensive/compare/v@PREVIOUS_VERSION@...v@CURRENT_VERSION@")
     unreleasedLink.set("https://github.com/zaproxy/fuzzdb-offensive/compare/v@CURRENT_VERSION@...HEAD")
